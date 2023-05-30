@@ -1,24 +1,18 @@
 import React from 'react'
 
-
 // expense form
-function ExpenseForm({f}) {
+function ExpenseForm({totalExpense,f}) {
   return (
-    <form onSubmit={f}>
-        <label>Expense amount :</label>
-        <input type="number" id = "amount" name="expenseAmount" placeholder='Type amount here'/>
-        <br />
-        <br />
-        <label>Description :</label>
-        <input type="text" id = "des" name="des" placeholder='Type description'/>
-        <br />
-        <br />
-        <button type="submit" className='btn red'>Pay</button>
-        <br />
+    <form className='formWrapper' onSubmit={f}>
+        <h3 className='expenseTotal'>Expense : {totalExpense}</h3>
+        <label>Expense amount :
+        <input type="number" id = "amount" name="expenseAmount" placeholder='Type amount here'/></label>
        
+        <label>Description :
+        <input type="text" id = "des" name="des" placeholder='Type description'/></label>
         
-
-      </form>
+        <button type="submit" className='btn red'>Pay</button>
+    </form>
 
   )
 }
