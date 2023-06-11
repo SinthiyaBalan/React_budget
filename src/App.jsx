@@ -52,7 +52,7 @@ function App() {
    
   <div className='budget'>
     <div className='balance'>
-      <p>Balance</p>
+      <p>Current Balance</p>
           <div className='bCircle'>
           <h2 className='bAmount'>{balance} €</h2>
           </div>
